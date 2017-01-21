@@ -15,7 +15,7 @@ body {
 
 h2 {
 	text-align: center;
-	padding: 5%;
+	padding: 2%;
 	margin: 0px;
 	}
 .photo-name {
@@ -208,20 +208,6 @@ img.desaturada {
 	transform: rotateY(0);
 }
 
-@keyframes titleAnimation {
-	0% {
-		font-size: 200px;
-	}
-	50% {
-		font-size: 180px;
-	}
-	100% {
-		font-size: 100px;
-		visibility: visible;
-	}
-
-}
-
 @keyframes subtitleAnimation {
 	0% {
 		opacity: 0;
@@ -251,7 +237,7 @@ input {
 }
 
 input[type=button], input[type=submit], input[type=reset], button {
-	background-color: #4CAF50;
+	background-color: black;
 	border: none;
 	color: white;
 	padding: 15px 40px;
@@ -259,10 +245,6 @@ input[type=button], input[type=submit], input[type=reset], button {
 	margin: 4px 2px;
 	cursor: pointer;
 	border-radius: 0px;
-}
-
-#too-many-enemies {
-	display: none;
 }
 
 #googleMap {

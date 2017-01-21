@@ -12,11 +12,11 @@
 	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA-jpiiZm0kg4wbYwPvUtNZvyLbiNcz6p8"></script>
 	<script>
 		function initialize() {
-			var myLatLng = {lat: 42.762480, lng: -83.283406};
+			var myLatLng = {lat: 41.6510097, lng: -4.7299421};
 
 			var mapProp = {
 				center:myLatLng,
-				zoom:15,
+				zoom:12,
 				mapTypeId:google.maps.MapTypeId.ROADMAP
 			};
 			var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
@@ -86,7 +86,7 @@
 						<input type="phone" id="phone" name="phone" placeholder="teléfono" pattern="[0-9]+[0-9]+[0-9]+[0-9]+[0-9]+[0-9]+[0-9]+[0-9]+[0-9]" maxlength="13" minlength="9" required>
 					</div>
 
-					<div class="form-row">
+					<div class="form-row" id="howYouKnowMe">
 						<label for="howYouKnowMe">¿Como me has conocido?:</label><br>
 						<label for="howYouKnowMe_1">LinkedIn</label>
 						<input type="radio" id="howYouKnowMe_1" name="howYouKnowMe" value="LinkedIn" required>
@@ -98,7 +98,7 @@
 
 					<div class="form-row" id="coments">
 						<label for="message">¿En que puedo ayudarte?</label><br>  
-      					<textarea id="message" name="message" rows="10" cols="40" maxlength="899" placeholder="¿En que puedo ayudarte?." required></textarea>  
+      					<textarea id="message" name="message" rows="7" cols="33" maxlength="899" placeholder="¿En que puedo ayudarte?." required></textarea>  
 					</div>
 					<div class="form-row">
 						<button type="submit" id="enviar">Enviar</button>
@@ -108,19 +108,12 @@
 		</section>
 	</main>
 
-	<!--<video id="video" width="600" height="400"></video>
-	<button id="snap">Snap photo</button>
-	<canvas id="canvas" width="600" height="400"></canvas>-->
-
 	<footer class="footer">
-		Víctor Bandín &copy; 2017 Consultor de Marketing y Transformación Digital
+		<a href="https://es.linkedin.com/in/victorbandin">Víctor Bandín &copy; 2017 Consultor de Marketing y Transformación Digital</a>
 	</footer>
 </body>
 <script src="js/menu.js"></script>
 <script src="js/send-notification.js"></script>
 <script src="js/form.js"></script>
 <script src="js/geolocation.js"></script>
-<script src="js/camera.js"></script>
-<script src="js/storage.js"></script>
-
 </html>
