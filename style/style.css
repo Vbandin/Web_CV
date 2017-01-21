@@ -126,15 +126,15 @@ img.desaturada {
 }
 
 .section-content {
-	height: 100vh;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	height: 100vh:;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .section-content-reverse {
 	height: 100vh;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	background-color: rgba(0, 0, 0, 0.92);
 	color: white;
 	margin-left: calc(-50vw + 50%);

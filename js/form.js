@@ -98,5 +98,13 @@ form.addEventListener("submit", function(event){
 	})
 });
 
-
-
+$(document).ready(function(){
+    $('#message').keyup(function(){
+        $(this).val(word_limit($(this).val(),150));
+    });
+});
+function word_limit(text, limit){
+    var words = text.split(/\b[\s,\.\-:;]*/,limit);
+    text=words.join(" ");
+    return text;
+}

@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style/grid.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon-victor.ico">
 	<script src="js/jquery-3.1.1.js"></script>
 	<script src="js/number-polyfill.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA-jpiiZm0kg4wbYwPvUtNZvyLbiNcz6p8"></script>
@@ -83,7 +84,7 @@
 
 					<div class="form-row">
 						<label for="phone">Teléfono:</label>
-						<input type="phone" id="phone" name="phone" placeholder="teléfono" pattern="[0-9]+[0-9]+[0-9]+[0-9]+[0-9]+[0-9]+[0-9]+[0-9]+[0-9]" maxlength="13" minlength="9" required>
+						<input type="phone" id="phone" name="phone" placeholder="teléfono" pattern="/^[9|6|7][0-9]{8}$/" required>
 					</div>
 
 					<div class="form-row" id="howYouKnowMe">
@@ -98,7 +99,7 @@
 
 					<div class="form-row" id="coments">
 						<label for="message">¿En que puedo ayudarte?</label><br>  
-      					<textarea id="message" name="message" rows="7" cols="33" maxlength="899" placeholder="¿En que puedo ayudarte?." required></textarea>  
+      					<textarea id="message" name="message" rows="7" cols="33" placeholder="¿En que puedo ayudarte?." required></textarea>  
 					</div>
 					<div class="form-row">
 						<button type="submit" id="enviar">Enviar</button>
@@ -112,7 +113,6 @@
 		<a href="https://es.linkedin.com/in/victorbandin">Víctor Bandín &copy; 2017 Consultor de Marketing y Transformación Digital</a>
 	</footer>
 </body>
-<script src="js/menu.js"></script>
 <script src="js/send-notification.js"></script>
 <script src="js/form.js"></script>
 <script src="js/geolocation.js"></script>
